@@ -16,7 +16,7 @@ def binarySearchHelper(array, target, left, right):
         elif target < potentialMatch:
             right = middle - 1
         else:
-            left = middle - 1
+            left = middle + 1
     return -1
 
-print(binarySearch([0,1, 2, 21, 33, 45, 45, 61, 71, 72, 73], 33))
+print(binarySearch([0, 1, 21, 33, 45, 45, 61, 71, 72, 73], 33))
